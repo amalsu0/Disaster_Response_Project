@@ -75,9 +75,6 @@ def tokenize(text):
     # Lemmatization
     text = [WordNetLemmatizer().lemmatize(w) for w in text]
     
-    # Stemming 
-    text = [PorterStemmer().stem(word) for word in text] 
-    
     return text
 
 def build_model():
