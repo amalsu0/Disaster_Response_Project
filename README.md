@@ -1,6 +1,6 @@
 # Disaster Response Pipeline Project
 
-###Project Description
+### Project Description
 
 This project is a part of the Data Scientist Nanodegree Program and 
 aims to develop a machine learning pipeline capable of classifying 
@@ -10,7 +10,7 @@ to ensure their prompt delivery to the appropriate disaster response agency.
 Additionally, the project features a web application that enables disaster response workers 
 to input messages and obtain classification results.
 
-###File Descriptions
+### File Descriptions
 
 The project consists of three folders:
 
@@ -23,12 +23,12 @@ as well as process_data.py that stores the processed data in a SQLite database D
 the processed data and store it as a pickle file classifier.pkl. 
 
 
-###Installation
+### Installation
 
 To run the project, you should have Python 3.5 or higher installed on your machine.
 
 
-###Instructions
+### Instructions
 
  1. Run the following commands in the project's root directory to set up your database and model.
  • To run ETL pipeline that cleans data and stores in database 
