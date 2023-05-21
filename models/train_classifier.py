@@ -121,8 +121,8 @@ def evaluate_model(model, X_test, Y_test, category_names):
        Y_test: messages' categories
        category_names: list of category types 
     """
-    Y_predicted = model.predict(X_test[:10])
-    report = classification_report(Y_test[:10], Y_predicted, target_names=category_names)
+    Y_predicted = model.predict(X_test)
+    report = classification_report(Y_test, Y_predicted, target_names=category_names)
     print(report)
 
 def save_model(model, model_filepath):
@@ -148,7 +148,7 @@ def main():
         model = build_model()
         
         print('Training model...')
-        model.fit(X_train[:50], Y_train[:50])
+        model.fit(X_train, Y_train)
         
         print('Evaluating model...')
         evaluate_model(model, X_test, Y_test, category_names)
